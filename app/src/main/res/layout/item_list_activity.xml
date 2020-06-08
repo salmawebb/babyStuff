@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="406dp"
+        android:layout_height="67dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2F9296"
+            android:onClick="homeView"
+            app:srcCompat="@drawable/home"
+            tools:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/btnshop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2F9296"
+            android:onClick="shopView"
+            app:srcCompat="@drawable/ic_launcher"
+            tools:srcCompat="@drawable/ic_launcher" />
+
+        <ImageButton
+            android:id="@+id/btnsearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2F9296"
+            android:onClick="searchView"
+            app:srcCompat="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/btnplus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2F9296"
+            android:onClick="productsView"
+            app:srcCompat="@drawable/plus" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="399dp"
+        android:layout_height="479dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <GridView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="489dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:columnWidth="150dp"
+            android:gravity="center"
+            android:numColumns="auto_fit" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="416dp"
+        android:layout_height="67dp"
+        android:background="#46b7b9"
+        android:fontFamily="@font/chewy"
+        android:text="Baby Stuff"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

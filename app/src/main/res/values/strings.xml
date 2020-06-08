@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BabyStuff</string>
+    <string name="precio">TextView</string>
+    <string name="total">Total:</string>
+</resources>
